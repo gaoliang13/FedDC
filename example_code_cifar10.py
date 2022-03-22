@@ -38,7 +38,7 @@ model_name = 'cifar10_LeNet' # Model type
 ###
 # Common hyperparameters
 
-com_amount = 1000
+com_amount = 600
 save_period = 200
 weight_decay = 1e-3
 batch_size = 50

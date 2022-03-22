@@ -540,7 +540,7 @@ class Dataset(torch.utils.data.Dataset):
     
     def __init__(self, data_x, data_y=True, train=False, dataset_name=''):
         self.name = dataset_name
-        if self.name == 'mnist' or self.name == 'synt' or self.name == 'emnist':
+        if self.name == 'mnist' or self.name == 'synt' or self.name == 'emnist' :
             self.X_data = torch.tensor(data_x).float()
             self.y_data = data_y
             if not isinstance(data_y, bool):

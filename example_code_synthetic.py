@@ -25,7 +25,7 @@ com_amount = 300
 save_period = 100
 weight_decay = 1e-5
 batch_size = 10
-act_prob= .1
+act_prob= 0.15
 model_name = 'Linear' # Model type
 suffix = model_name
 lr_decay_per_round = 1
@@ -60,7 +60,7 @@ print_per = 5
                                     model_func=model_func, init_model=init_model, alpha_coef=alpha_coef,
                                     sch_step=1, sch_gamma=1,save_period=save_period, suffix=suffix, trial=False, 
                                     data_path=data_path, lr_decay_per_round=lr_decay_per_round)
-exit(0)
+#exit(0)
 ###
             
 

@@ -37,7 +37,7 @@ model_name = 'cifar100_LeNet' # Model type
 ###
 # Common hyperparameters
 
-com_amount = 100
+com_amount = 600
 save_period = 200
 weight_decay = 1e-3
 batch_size = 50
@@ -66,23 +66,23 @@ else:
 
 ####
 
-print('FedDC')
+# print('FedDC')
 
-epoch = 5
-alpha_coef = 1e-2
-learning_rate = 0.1
-print_per = epoch // 2
+# epoch = 5
+# alpha_coef = 1e-2
+# learning_rate = 0.1
+# print_per = epoch // 2
 
-n_data_per_client = np.concatenate(data_obj.clnt_x, axis=0).shape[0] / n_client
-n_iter_per_epoch  = np.ceil(n_data_per_client/batch_size)
-n_minibatch = (epoch*n_iter_per_epoch).astype(np.int64)
+# n_data_per_client = np.concatenate(data_obj.clnt_x, axis=0).shape[0] / n_client
+# n_iter_per_epoch  = np.ceil(n_data_per_client/batch_size)
+# n_minibatch = (epoch*n_iter_per_epoch).astype(np.int64)
 
-[avg_ins_mdls, avg_cld_mdls, avg_all_mdls, trn_sel_clt_perf, tst_sel_clt_perf, trn_cur_cld_perf, tst_cur_cld_perf, trn_all_clt_perf, tst_all_clt_perf] = train_FedDC(data_obj=data_obj, act_prob=act_prob, n_minibatch=n_minibatch, 
-                                    learning_rate=learning_rate, batch_size=batch_size, epoch=epoch, 
-                                    com_amount=com_amount, print_per=print_per, weight_decay=weight_decay, 
-                                    model_func=model_func, init_model=init_model, alpha_coef=alpha_coef,
-                                    sch_step=1, sch_gamma=1,save_period=save_period, suffix=suffix, trial=False,
-                                    data_path=data_path, lr_decay_per_round=lr_decay_per_round)
+# [avg_ins_mdls, avg_cld_mdls, avg_all_mdls, trn_sel_clt_perf, tst_sel_clt_perf, trn_cur_cld_perf, tst_cur_cld_perf, trn_all_clt_perf, tst_all_clt_perf] = train_FedDC(data_obj=data_obj, act_prob=act_prob, n_minibatch=n_minibatch, 
+#                                     learning_rate=learning_rate, batch_size=batch_size, epoch=epoch, 
+#                                     com_amount=com_amount, print_per=print_per, weight_decay=weight_decay, 
+#                                     model_func=model_func, init_model=init_model, alpha_coef=alpha_coef,
+#                                     sch_step=1, sch_gamma=1,save_period=save_period, suffix=suffix, trial=False,
+#                                     data_path=data_path, lr_decay_per_round=lr_decay_per_round)
 #exit(0)
 ###
 # baselines
