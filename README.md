@@ -3,7 +3,7 @@ Code for paper - **[Federated Learning on Non-IID Data with Local-drift Decoupli
 
 We provide code to run FedDC, FedAvg, 
 [FedDyn](https://openreview.net/pdf?id=B7v4QMR6Z9w), 
-[Scaffold](https://openreview.net/pdf?id=B7v4QMR6Z9w), and [FedProx](https://arxiv.org/abs/1812.06127)
+[Scaffold](https://openreview.net/pdf?id=B7v4QMR6Z9w), and [FedProx](https://arxiv.org/abs/1812.06127) methods.
 
 
 ## Prerequisite
