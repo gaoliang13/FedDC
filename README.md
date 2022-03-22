@@ -1,7 +1,7 @@
 # Federated Learning on Non-IID Data with Local-drift Decoupling and Correction
 Code for paper - **[Federated Learning on Non-IID Data with Local-drift Decoupling and Correction]**
 
-We provide code to run FedDC, FedAvg, FedProx, 
+We provide code to run FedDC, FedAvg, 
 [FedDyn](https://openreview.net/pdf?id=B7v4QMR6Z9w), 
 [Scaffold](https://openreview.net/pdf?id=B7v4QMR6Z9w), and [FedProx](https://arxiv.org/abs/1812.06127)
 
