@@ -62,4 +62,14 @@ data_obj = DatasetObject(dataset='CIFAR10', n_client=100, seed=47, unbalanced_sg
 ## FedDC 
 The FedDC method is implemented in ```utils_methods_FedDC.py```. The baseline methods are stored in ```utils_methods.py```.
 
+### Citation
 
+```
+@inproceedings{
+gao2022federated,
+title={FedDC: Federated Learning with Non-IID Data via Local Drift Decoupling and Correction},
+author={Liang Gao and Huazhu Fu and Li Li and Yingwen Chen and Ming Xu and Cheng-Zhong Xu},
+booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+year={2022}
+}
+```
