@@ -1,7 +1,7 @@
 # Federated Learning on Non-IID Data with Local-drift Decoupling and Correction
 Code for paper - **[Federated Learning on Non-IID Data with Local-drift Decoupling and Correction]**
 
-We provide code to run FedDC, FedAvg, [FedDyn](https://openreview.net/pdf?id=B7v4QMR6Z9w), 
+We provide code to run FedDC, FedAvg, FedProx, 
 [FedDyn](https://openreview.net/pdf?id=B7v4QMR6Z9w), 
 [Scaffold](https://openreview.net/pdf?id=B7v4QMR6Z9w), and [FedProx](https://arxiv.org/abs/1812.06127)
 
@@ -22,15 +22,15 @@ You can obtain the datasets when you first time run the code on CIFAR10, CIFAR10
 EMNIST needs to be downloaded from this [link](https://www.nist.gov/itl/products-and-services/emnist-dataset).
 
 
-You can follow the following steps to run the experiments:
+For example, you can follow the following steps to run the experiments:
 
-```python example_code_synthetic.py```
+```python example_code_mnist.py```
 ```python example_code_cifar10.py```
 ```python example_code_cifar100.py```
 
-1. Run the following script to run experiments on the synthetic dataset for all above methods:
+1. Run the following script to run experiments on the MNIST dataset for all above methods:
     ```
-    python example_code_synthetic.py
+    python example_code_mnist.py
     ```
 2. Run the following script to run experiments on CIFAR10 for all above methods:
     ```
